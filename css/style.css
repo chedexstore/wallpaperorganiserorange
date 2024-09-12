@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: transparent;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    background: white; /* White background added */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60% 40%;
+    gap: 20px;
+    height: 90vh;
+}
+
+.folders, .to-do-list {
+    padding: 20px;
+    background-color: white; /* White background added */
+    overflow: auto;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white; /* White background added */
+    overflow: hidden;
+}
+
+.apps {
+    width: 100%;
+    padding: 20px;
+    background-color: white; /* White background added */
+}
+
+.apps h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h3[contenteditable="true"] {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    color: black;
+    cursor: text;
+    box-shadow: none;
+    font-family: 'Arial', sans-serif;
+}
+
+h3 {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+.mt-1{
+    margin-top: 10px;
+}
+
+#task-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 2.0em;
+    -webkit-box-shadow: 0 10px 50px -20px rgb(255, 153, 102, 0.65);
+            box-shadow: 0 10px 50px -20px rgb(255, 153, 102, 0.65);
+    border:none;
+    outline:none;
+    border-bottom: 1px solid #fc9567;
+}
+
+.orange-corale{
+    -webkit-box-shadow: 0 10px 50px -20px rgb(255, 153, 102, 0.65);
+    box-shadow: 0 10px 50px -20px rgb(255, 153, 102, 0.65); 
+    border: 2px solid #fc9567; 
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+#tasks {
+    list-style: none;
+    padding: 0;
+}
+
+#tasks li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    font-size: 2.0em; /* Adjust this value as needed */
+}
+
+#tasks li::before {
+    content: "●";
+    color: orange;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: orange;
+    font-size: 1.0rem;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: darkorange;
+}
+
+#time {
+    position:relative;
+    margin-top:10px;
+    font-size: 48px;
+}
+
+.calendar-nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-nav button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#to-do-list {
+    grid-row: span 2;
+}
+
+#current-month {
+    font-size: 24px;
+    margin: 0 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* General styling for the calendar */
+.calendar {
+    grid-row: span 2;
+}
+
+#calendar-header {
+    text-align: center;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.weekday {
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background: none;
+}
+
+.day {
+    padding: 10px;
+    background: none;
+    color: black;
+}
+
+.day:hover {
+    background-color: transparent;
+}
+
+.current-day {
+    background-color: #FFB6C1;
+    border-radius: 50%;
+    color: black;
+}

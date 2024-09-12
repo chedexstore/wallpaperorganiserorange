@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Organizer</title>
+    <link rel="stylesheet" href="css/evo-calendar.css">
+    <link rel="stylesheet" href="css/evo-calendar.orange-coral.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <div class="folders orange-corale" id="folders">
+                <h3 class="text-uppercase">folders</h3>
+            </div>
+            <div class="to-do-list orange-corale" id="to-do-list">
+                <h3 class="text-uppercase">to do list</h3>
+                <input type="text" class="mt-1" id="task-input" placeholder="Add a new task...">
+                <ul id="tasks">
+                    <!-- To-do list items will be added here -->
+                </ul>
+            </div>
+            <div class="calendar orange-corale" id="calendar-container">
+                <div id="time"></div>
+                <div id="calendar"></div>
+            </div>
+            <div class="apps orange-corale" id="apps">
+                <h3 class="text-uppercase">apps</h3>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/evo-calendar.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
