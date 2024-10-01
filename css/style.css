@@ -82,7 +82,7 @@ h3 {
 #task-input {
     width: 100%;
     padding: 10px;
-    font-size: 1em;
+    font-size: 2em;
     -webkit-box-shadow: 0 10px 50px -20px rgb(255, 153, 102, 0.65);
             box-shadow: 0 10px 50px -20px rgb(255, 153, 102, 0.65);
     border:none;
@@ -105,6 +105,9 @@ h3 {
     padding: 0;
 }
 
+.task-text {
+    font-size: 36px; /* Set a larger font size */
+}
 
 
 /* Remove the default bullets from the list */
