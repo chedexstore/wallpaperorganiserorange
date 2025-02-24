@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="css/evo-calendar.css">
     <link rel="stylesheet" href="css/evo-calendar.orange-coral.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional CSS to style the footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 10px 0;
+            z-index: 1000; /* Ensure it's above other content */
+        }
+        footer a {
+            color: #000; /* Link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -28,12 +49,16 @@
             <div class="apps orange-corale" id="apps">
                 <h3 class="text-uppercase">apps</h3>
             </div>
-
         </div>
     </div>
+
+    <!-- Footer with the store link -->
+    <footer>
+        <a href="https://ko-fi.com/chedexprintables/shop" target="_blank">Visit our store</a>
+    </footer>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/evo-calendar.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
-https://ko-fi.com/chedexprintables/shop
