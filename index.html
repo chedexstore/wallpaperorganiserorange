@@ -8,23 +8,17 @@
     <link rel="stylesheet" href="css/evo-calendar.orange-coral.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Additional CSS to style the footer */
-        footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
+        /* Additional CSS to style the store link */
+        .store-link {
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-            padding: 10px 0;
-            z-index: 1000; /* Ensure it's above other content */
+            margin-top: 20px; /* Add some space above the link */
         }
-        footer a {
+        .store-link a {
             color: #000; /* Link color */
             text-decoration: none; /* Remove underline */
             font-weight: bold;
         }
-        footer a:hover {
+        .store-link a:hover {
             text-decoration: underline; /* Add underline on hover */
         }
     </style>
@@ -41,6 +35,10 @@
                 <ul id="tasks">
                     <!-- To-do list items will be added here -->
                 </ul>
+                <!-- Store link added here -->
+                <div class="store-link">
+                    <a href="https://ko-fi.com/chedexprintables/shop" target="_blank">Visit our store</a>
+                </div>
             </div>
             <div class="calendar orange-corale" id="calendar-container">
                 <div id="time"></div>
@@ -51,11 +49,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Footer with the store link -->
-    <footer>
-        <a href="https://ko-fi.com/chedexprintables/shop" target="_blank">Visit our store</a>
-    </footer>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/evo-calendar.min.js"></script>
