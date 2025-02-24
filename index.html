@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="css/evo-calendar.orange-coral.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Additional CSS to style the store link */
-        .store-link {
-            text-align: center;
-            margin-top: 20px; /* Add some space above the link */
+        /* Additional CSS to style the footer and store link */
+        footer {
+            position: fixed; /* Fix the footer at the bottom of the viewport */
+            bottom: 0; /* Place it at the very bottom */
+            left: 0;
+            width: 100%; /* Full width */
+            text-align: center; /* Center the text */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 10px 0; /* Add some padding */
+            z-index: 1000; /* Ensure it stays above other content */
         }
-        .store-link a {
+        footer a {
             color: #000; /* Link color */
             text-decoration: none; /* Remove underline */
             font-weight: bold;
         }
-        .store-link a:hover {
+        footer a:hover {
             text-decoration: underline; /* Add underline on hover */
         }
     </style>
@@ -35,10 +41,6 @@
                 <ul id="tasks">
                     <!-- To-do list items will be added here -->
                 </ul>
-                <!-- Store link added here -->
-                <div class="store-link">
-                    <a href="https://ko-fi.com/chedexprintables/shop" target="_blank">https://ko-fi.com/chedexprintables/shop</a>
-                </div>
             </div>
             <div class="calendar orange-corale" id="calendar-container">
                 <div id="time"></div>
@@ -49,6 +51,11 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer with the store link -->
+    <footer>
+        <a href="https://ko-fi.com/chedexprintables/shop" target="_blank">https://ko-fi.com/chedexprintables/shop</a>
+    </footer>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/evo-calendar.min.js"></script>
